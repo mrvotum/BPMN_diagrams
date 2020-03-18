@@ -32,12 +32,12 @@ export default class AddContent {
       const xhr = new XMLHttpRequest();
 
 
-      xhr.open('POST', 'http://localhost:7091');
+      xhr.open('POST', 'https://bpmn-diagrams.herokuapp.com');
       // TODO: subscribe to response
 
       xhr.addEventListener('load', () => {
         if (xhr.status === 200) {
-          URL.revokeObjectURL(`http://localhost:7091${xhr.response}`);
+          URL.revokeObjectURL(`https://bpmn-diagrams.herokuapp.com${xhr.response}`);
 
           console.log(`На сервер загружаем ${this.fileEl.value}`);
 
@@ -69,7 +69,7 @@ export default class AddContent {
   // eslint-disable-next-line class-methods-use-this
   loadTasks() {
     console.log('Загружаю с сервера данные...');
-    const api = new API('http://localhost:7091/contentArr');
+    const api = new API('https://bpmn-diagrams.herokuapp.com/contentArr');
 
     async function a(contentList) {
       const images = await api.load();
@@ -82,7 +82,7 @@ export default class AddContent {
           spanEl.id = data[i].name;
 
           const previewEl = document.createElement('div');
-          previewEl.src = `http://localhost:7091/${data[i].name}`;
+          previewEl.src = `https://bpmn-diagrams.herokuapp.com/${data[i].name}`;
           previewEl.className = 'content';
 
 

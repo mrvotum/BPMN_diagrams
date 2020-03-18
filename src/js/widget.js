@@ -1,4 +1,3 @@
-import API from './api';
 import AddContent from './class_addContent';
 
 export default class Widget {
@@ -17,7 +16,7 @@ export default class Widget {
   }
 
   addEventListeners() {
-    this.justOpen.addEventListener('click', (event) => {
+    this.justOpen.addEventListener('click', () => {
       console.log('Пытаемся посмотреть, что есть в БД');
       const addContent = new AddContent();
       addContent.loadTasks();
