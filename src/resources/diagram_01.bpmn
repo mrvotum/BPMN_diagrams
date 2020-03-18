@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_185kqee" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="6.3.1">
+  <bpmn:process id="Process_1jetkkg" isExecutable="false">
+    <bpmn:startEvent id="StartEvent_1kc1mfo" />
+    <bpmn:task id="Activity_1t8gt0d" name="туи тоже" />
+    <bpmn:textAnnotation id="TextAnnotation_12bfejf">
+      <bpmn:text>первый</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1p3hhzg" sourceRef="StartEvent_1kc1mfo" targetRef="TextAnnotation_12bfejf" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1jetkkg">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1kc1mfo">
+        <dc:Bounds x="172" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_12bfejf_di" bpmnElement="TextAnnotation_12bfejf">
+        <dc:Bounds x="290" y="105" width="100" height="30" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1p3hhzg_di" bpmnElement="Association_1p3hhzg">
+        <di:waypoint x="208" y="120" />
+        <di:waypoint x="290" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Activity_1t8gt0d_di" bpmnElement="Activity_1t8gt0d">
+        <dc:Bounds x="380" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
